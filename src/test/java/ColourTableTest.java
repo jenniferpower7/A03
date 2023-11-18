@@ -39,4 +39,11 @@ public class ColourTableTest {
         assertEquals("Invalid RGB value: " + invalidRGBValue[0], exception.getMessage());
     }
 
+    @Test
+    public void testInvalidCapacityExceeding(){
+        //test whether an exception is thrown when the  capacity of the palette is invalid as it is larger than 1025
+        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{colourTable=new ColourTable(1026)});
+
+    }
+
 }
