@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fee6828e-d1ed-4d97-b3b1-6d736dfa86a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ColourTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ColourTableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +87,31 @@
       <option name="project" value="LOCAL" />
       <updated>1700332053553</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=" test method to ensure exception is thrown when the parameter is too large">
+      <option name="closed" value="true" />
+      <created>1700333154470</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700333154470</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" test method to ensure exception is thrown when the parameter is too small">
+      <option name="closed" value="true" />
+      <created>1700333414890</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700333414890</updated>
+    </task>
+    <task id="LOCAL-00008" summary=" test method to ensure exception is thrown when the parameter not a power or 2">
+      <option name="closed" value="true" />
+      <created>1700333441477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700333441477</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -95,6 +120,9 @@
     <MESSAGE value="test method for constructor method" />
     <MESSAGE value="test method to ensure exception is thrown when an RBG value attempted to be added is too large" />
     <MESSAGE value=" test method to ensure exception is thrown when an RBG value attempted to be added is too small" />
-    <option name="LAST_COMMIT_MESSAGE" value=" test method to ensure exception is thrown when an RBG value attempted to be added is too small" />
+    <MESSAGE value=" test method to ensure exception is thrown when the parameter is too large" />
+    <MESSAGE value=" test method to ensure exception is thrown when the parameter is too small" />
+    <MESSAGE value=" test method to ensure exception is thrown when the parameter not a power or 2" />
+    <option name="LAST_COMMIT_MESSAGE" value=" test method to ensure exception is thrown when the parameter not a power or 2" />
   </component>
 </project>
