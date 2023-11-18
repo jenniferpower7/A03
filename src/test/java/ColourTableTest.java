@@ -17,7 +17,7 @@ public class ColourTableTest {
     //test that the constructor created a palette of the size of the parameter
     public void testConstructorMethod() {
         ColourTable colourTable=new ColourTable(4);
-        assertEquals(colourTable.getSize(),4);
+        assertEquals(colourTable.getCapacity(),4);
     }
 
     @Test
