@@ -42,8 +42,17 @@ public class ColourTableTest {
     @Test
     public void testInvalidCapacityExceeding(){
         //test whether an exception is thrown when the  capacity of the palette is invalid as it is larger than 1025
-        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{colourTable=new ColourTable(1026)});
+        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{colourTable=new ColourTable(1026);});
 
     }
+
+    @Test
+    public void testInvalidCapacitySubceeding(){
+        //test whether an exception is thrown when the  capacity of the palette is invalid as it is smaller than 2
+        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{colourTable=new ColourTable(1);});
+
+    }
+
+
 
 }

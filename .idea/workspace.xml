@@ -70,13 +70,31 @@
       <option name="project" value="LOCAL" />
       <updated>1700327687126</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test method to ensure exception is thrown when an RBG value attempted to be added is too large">
+      <option name="closed" value="true" />
+      <created>1700331812270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700331812270</updated>
+    </task>
+    <task id="LOCAL-00005" summary=" test method to ensure exception is thrown when an RBG value attempted to be added is too small">
+      <option name="closed" value="true" />
+      <created>1700332053553</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700332053553</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added JUnit dependency." />
     <MESSAGE value="test method for add() method" />
     <MESSAGE value="test method for constructor method" />
-    <option name="LAST_COMMIT_MESSAGE" value="test method for constructor method" />
+    <MESSAGE value="test method to ensure exception is thrown when an RBG value attempted to be added is too large" />
+    <MESSAGE value=" test method to ensure exception is thrown when an RBG value attempted to be added is too small" />
+    <option name="LAST_COMMIT_MESSAGE" value=" test method to ensure exception is thrown when an RBG value attempted to be added is too small" />
   </component>
 </project>
