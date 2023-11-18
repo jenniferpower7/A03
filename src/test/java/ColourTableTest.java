@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class ColourTableTest {
+    //test that an rbg colour was actually added to colourTable by checking it contains it and the size has incrememnted
     @Test
     public void testAddMethod(){
         ColourTable colourTable = new ColourTable(4);
@@ -10,5 +11,12 @@ public class ColourTableTest {
 
         assertEquals(initialSize +1, colourTable.getSize());
         assertTrue(colourTable.contains(rgbColourToAdd));
+    }
+
+    @Test
+    //test that the constructor created a palette of the size of the parameter
+    public void testConstructorMethod() {
+        ColourTable colourTable=new ColourTable(4);
+        assertEquals(colourTable.getSize(),4);
     }
 }
