@@ -62,12 +62,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700326128249</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test method for constructor method">
+      <option name="closed" value="true" />
+      <created>1700327687126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700327687126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added JUnit dependency." />
     <MESSAGE value="test method for add() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="test method for add() method" />
+    <MESSAGE value="test method for constructor method" />
+    <option name="LAST_COMMIT_MESSAGE" value="test method for constructor method" />
   </component>
 </project>
