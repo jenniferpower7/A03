@@ -96,5 +96,13 @@ public class ColourTableTest {
         assertEquals(colourTable.getSize(),1);
     }
 
+    @Test
+    public void testValidCapacity(){
+        ColourTable colourTable=new ColourTable(4);
+        assertEquals(colourTable.getCapacity(),4);
+    }
+
+
+
 
 }
