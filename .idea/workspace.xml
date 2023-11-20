@@ -218,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700506030104</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="method written for isValidRGB and add modified to produce error message if RGB invalid so that test methods for invalidRGBExceeding and invalidRBGSubceeding run">
+      <option name="closed" value="true" />
+      <created>1700509204572</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700509204578</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -237,6 +245,7 @@
     <MESSAGE value="test method to check the size method is working accurately after multiple RBG methods are used." />
     <MESSAGE value="methods for constructor and getCapacity so that constructor test method would run" />
     <MESSAGE value="methods written for add, getSize, and contains so that add test method runs" />
-    <option name="LAST_COMMIT_MESSAGE" value="methods written for add, getSize, and contains so that add test method runs" />
+    <MESSAGE value="method written for isValidRGB and add modified to produce error message if RGB invalid so that test methods for invalidRGBExceeding and invalidRBGSubceeding run" />
+    <option name="LAST_COMMIT_MESSAGE" value="method written for isValidRGB and add modified to produce error message if RGB invalid so that test methods for invalidRGBExceeding and invalidRBGSubceeding run" />
   </component>
 </project>

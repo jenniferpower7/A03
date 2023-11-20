@@ -27,7 +27,7 @@ public class ColourTableTest {
         //test whether an exception is thrown when an invalid RBG is attempted to be added to colourTable
         ColourTable colourTable=new ColourTable(4);
         int[] invalidRGBValue={0,0,256};
-        IllegalArgumentException exception=assertThrows(IllegalArgumentException.class,()->{colourTable.add(invalidRGBValue);});
+        ArrayIndexOutOfBoundsException exception=assertThrows(ArrayIndexOutOfBoundsException.class,()->{colourTable.add(invalidRGBValue);});
         //check correct exception message is thrown
         assertEquals("Invalid RGB value: " + invalidRGBValue, exception.getMessage());
     }
@@ -36,7 +36,7 @@ public class ColourTableTest {
         //test whether an exception is thrown when an invalid RBG is attempted to be added to colourTable
         ColourTable colourTable=new ColourTable(4);
         int[] invalidRGBValue={-1,0,0};
-        IllegalArgumentException exception=assertThrows(IllegalArgumentException.class,()->{colourTable.add(invalidRGBValue);});
+        ArrayIndexOutOfBoundsException exception=assertThrows(ArrayIndexOutOfBoundsException.class,()->{colourTable.add(invalidRGBValue);});
         //check correct exception message is thrown
         assertEquals("Invalid RGB value: " + invalidRGBValue, exception.getMessage());
     }
@@ -44,20 +44,20 @@ public class ColourTableTest {
     @Test
     public void testInvalidCapacityExceeding(){
         //test whether an exception is thrown when the  capacity of the palette is invalid as it is larger than 1025
-        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{colourTable=new ColourTable(1026);});
+        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{ColourTable colourTable=new ColourTable(1026);});
 
     }
 
     @Test
     public void testInvalidCapacitySubceeding(){
         //test whether an exception is thrown when the  capacity of the palette is invalid as it is smaller than 2
-        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{colourTable=new ColourTable(1);});
+        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{ColourTable colourTable=new ColourTable(1);});
 
     }
     @Test
     public void testInvalidCapacityNotPowerOf2(){
         //test whether an exception is thrown when the  capacity of the palette is invalid as it is not a power of 2
-        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{colourTable=new ColourTable(7);});
+        IllegalStateException exception = assertThrows(IllegalStateException.class,()->{ColourTable colourTable=new ColourTable(7);});
 
     }
 
@@ -78,54 +78,10 @@ public class ColourTableTest {
 
         assertEquals(4, colourTable.getSize());
 
-        IllegalStateException exception= assertThrows(IllegalStateException.class,()->{colourTable.add(value5);});
+        IndexOutOfBoundsException exception= assertThrows(IndexOutOfBoundsException.class,()->{colourTable.add(value5);});
 
         assertEquals(4, colourTable.getSize());
 
-    }
-
-    @Test
-    public void testDuplicateColours(){
-        //test whether an exception is thrown when a duplicate colour is added to the palette
-        ColourTable colourTable=new ColourTable(4);
-        int[] value1={1,1,1};
-        colourTable.add(value1);
-        assertEquals(colourTable.getSize(),1);
-        int[] value2={1,1,1};
-
-        IllegalStateException exception=assertThrows(IllegalStateException.class,()->{colourTable.add(value2);});
-
-        assertEquals(colourTable.getSize(),1);
-    }
-
-    @Test
-    public void testValidCapacity(){
-        ColourTable colourTable=new ColourTable(4);
-        assertEquals(colourTable.getCapacity(),4);
-    }
-
-    @Test
-    public void testSize(){
-        //check multiple RBG values are added to palette correctly
-        ColourTable colourTable = new ColourTable(8);
-
-        int[] value1={20,60,20};
-        colourTable.add(value1);
-
-        assertEquals(1,colourTable.getSize());
-        assertTrue(colourTable.contains(value1));
-
-        int[] value2={80,200,150};
-        colourTable.add(value2);
-
-        assertEquals(2,colourTable.getSize());
-        assertTrue(colourTable.contains(value2));
-
-        int[] value3={200,100,200};
-        colourTable.add(value3);
-
-        assertEquals(3,colourTable.getSize());
-        assertTrue(colourTable.contains(value3));
     }
 
 

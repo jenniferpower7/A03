@@ -6,6 +6,11 @@ public class ColourTable {
     private int capacity;
 
     public ColourTable(int capacity){
+
+        if(!isValidCapacity(capacity)){
+            throw new IllegalStateException("Invalid Capacity: " +capacity);
+        }
+
         this.capacity=capacity;
         this.colourTable=new int[capacity][3];
         this.currentSize=0;
@@ -16,7 +21,7 @@ public class ColourTable {
 
     public void add(int[] rgb){
         if(!isValidRGB(rgb)){
-            throw new IllegalArgumentException("Invalid RGB value: " + rgb);
+            throw new ArrayIndexOutOfBoundsException("Invalid RGB value: " + rgb);
         }
 
 
@@ -39,15 +44,28 @@ public class ColourTable {
         return false;
     }
 
-    private boolean isValidRGB(int[] rgb){
-        for(int value: rgb){
-            if(value < 0||value>255||rgb.length!=3){
+    private boolean isValidRGB(int[] rgb) {
+        // Check the length first
+        if (rgb.length != 3) {
+            return false;
+        }
+
+        // Check each value
+        for (int value : rgb) {
+            if (!(value >= 0 && value < 256)) {
                 return false;
             }
         }
-        return true;
-    }
 
+        // All checks passed, return true
+        return true;}
+
+    private boolean isValidCapacity(int capacity){
+        if(capacity>=2 && capacity <=1025 && ((capacity & (capacity - 1)) == 0)){
+            return true;
+        }
+        return false;
+    }
 
 }
 
