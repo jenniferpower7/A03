@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fee6828e-d1ed-4d97-b3b1-6d736dfa86a3" name="Changes" comment="">
+    <list default="true" id="fee6828e-d1ed-4d97-b3b1-6d736dfa86a3" name="Changes" comment="test for ensuring multiple rgb's added correctly passed">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ColourTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ColourTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/java/ColourTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/ColourTableTest.java" afterDir="false" />
     </list>
@@ -233,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700512168333</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="test for ensuring multiple rgb's added correctly passed">
+      <option name="closed" value="true" />
+      <created>1700512341945</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1700512341945</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,6 +262,7 @@
     <MESSAGE value="methods written for add, getSize, and contains so that add test method runs" />
     <MESSAGE value="method written for isValidRGB and add modified to produce error message if RGB invalid so that test methods for invalidRGBExceeding and invalidRBGSubceeding run" />
     <MESSAGE value="Method written for checking valid capacity, added to constructor method so that invalid capacity tests passed. changed exceptions to be thrown, rearranged if else statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Method written for checking valid capacity, added to constructor method so that invalid capacity tests passed. changed exceptions to be thrown, rearranged if else statement" />
+    <MESSAGE value="test for ensuring multiple rgb's added correctly passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="test for ensuring multiple rgb's added correctly passed" />
   </component>
 </project>

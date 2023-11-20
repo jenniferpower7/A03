@@ -24,6 +24,11 @@ public class ColourTable {
             throw new ArrayIndexOutOfBoundsException("Invalid RGB value: " + rgb);
         }
 
+        if (contains(rgb)){
+            throw new IllegalStateException("RGB already in palette");
+
+        }
+
 
         for(int i=0;i<3;i++){
             colourTable[currentSize][i]=rgb[i];
@@ -66,7 +71,6 @@ public class ColourTable {
         }
         return false;
     }
-
 
 
 }
