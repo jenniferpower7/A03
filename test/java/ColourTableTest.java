@@ -29,7 +29,7 @@ public class ColourTableTest {
         int[] invalidRGBValue={0,0,256};
         IllegalArgumentException exception=assertThrows(IllegalArgumentException.class,()->{colourTable.add(invalidRGBValue);});
         //check correct exception message is thrown
-        assertEquals("Invalid RGB value: " + invalidRGBValue[2], exception.getMessage());
+        assertEquals("Invalid RGB value: " + invalidRGBValue, exception.getMessage());
     }
     @Test
     public void testInvalidRGBSubceeding(){
@@ -38,7 +38,7 @@ public class ColourTableTest {
         int[] invalidRGBValue={-1,0,0};
         IllegalArgumentException exception=assertThrows(IllegalArgumentException.class,()->{colourTable.add(invalidRGBValue);});
         //check correct exception message is thrown
-        assertEquals("Invalid RGB value: " + invalidRGBValue[0], exception.getMessage());
+        assertEquals("Invalid RGB value: " + invalidRGBValue, exception.getMessage());
     }
 
     @Test
@@ -127,6 +127,7 @@ public class ColourTableTest {
         assertEquals(3,colourTable.getSize());
         assertTrue(colourTable.contains(value3));
     }
+
 
 
 }

@@ -15,6 +15,11 @@ public class ColourTable {
     }
 
     public void add(int[] rgb){
+        if(!isValidRGB(rgb)){
+            throw new IllegalArgumentException("Invalid RGB value: " + rgb);
+        }
+
+
         for(int i=0;i<3;i++){
             colourTable[currentSize][i]=rgb[i];
         }
@@ -33,5 +38,16 @@ public class ColourTable {
         }
         return false;
     }
+
+    private boolean isValidRGB(int[] rgb){
+        for(int value: rgb){
+            if(value < 0||value>255||rgb.length!=3){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 }
 
