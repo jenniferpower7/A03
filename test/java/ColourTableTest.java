@@ -84,6 +84,28 @@ public class ColourTableTest {
 
     }
 
+    @Test
+    public void testSize(){
+        //check multiple RBG values are added to palette correctly
+        ColourTable colourTable = new ColourTable(8);
 
+        int[] value1={20,60,20};
+        colourTable.add(value1);
+
+        assertEquals(1,colourTable.getSize());
+        assertTrue(colourTable.contains(value1));
+
+        int[] value2={80,200,150};
+        colourTable.add(value2);
+
+        assertEquals(2,colourTable.getSize());
+        assertTrue(colourTable.contains(value2));
+
+        int[] value3={200,100,200};
+        colourTable.add(value3);
+
+        assertEquals(3,colourTable.getSize());
+        assertTrue(colourTable.contains(value3));
+    }
 
 }
