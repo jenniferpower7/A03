@@ -7,7 +7,7 @@
     <list default="true" id="fee6828e-d1ed-4d97-b3b1-6d736dfa86a3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ColourTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ColourTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ColourTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/ColourTableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/ColourTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/ColourTableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700500902034</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="methods for constructor and getCapacity so that constructor test method would run">
+      <option name="closed" value="true" />
+      <created>1700504372733</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700504372735</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -219,17 +227,7 @@
     <MESSAGE value="Changed getSize in testConstructorMethod to getCapacity" />
     <MESSAGE value="test method to check valid capacity" />
     <MESSAGE value="test method to check the size method is working accurately after multiple RBG methods are used." />
-    <option name="LAST_COMMIT_MESSAGE" value="test method to check the size method is working accurately after multiple RBG methods are used." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/java/ColourTableTest.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="methods for constructor and getCapacity so that constructor test method would run" />
+    <option name="LAST_COMMIT_MESSAGE" value="methods for constructor and getCapacity so that constructor test method would run" />
   </component>
 </project>

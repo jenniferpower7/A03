@@ -14,7 +14,7 @@ public class ColourTableTest {
     @Test
     public void testAddMethod(){
         ColourTable colourTable = new ColourTable(4);
-        initialSize=colourTable.getSize();
+        int initialSize=colourTable.getSize();
         int [] rgbColourToAdd={255,0,0};
         colourTable.add(rgbColourToAdd);
 
@@ -119,7 +119,7 @@ public class ColourTableTest {
         colourTable.add(value2);
 
         assertEquals(2,colourTable.getSize());
-        assertTrue(colourTable.contains(value3));
+        assertTrue(colourTable.contains(value2));
 
         int[] value3={200,100,200};
         colourTable.add(value3);
