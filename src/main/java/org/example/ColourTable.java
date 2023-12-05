@@ -1,9 +1,9 @@
 package org.example;
 
 public class ColourTable {
-    private int [][] colourTable;
+    private final int [][] colourTable;
     private int currentSize;
-    private int capacity;
+    private final int capacity;
 
     public ColourTable(int capacity){
 
